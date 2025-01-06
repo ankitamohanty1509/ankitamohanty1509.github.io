@@ -1,0 +1,260 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF; /* White text */
+    background-color: #111111; /* Normal black background */
+}
+
+h1, h2, h3 {
+    color: #FFFFFF; /* White headings */
+}
+
+a {
+    color: #FFFFFF; /* White links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(to right, #1A1A1A, #333333);
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    /*animation: slideLeft 1s ease-out; /* Slide animation */
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    font-style: italic;
+    animation: slideLeft 1s ease-out; /* Slide animation */
+}
+
+/* Slide-in left animation */
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Navbar styles */
+nav {
+    background-color: #1A1A1A;
+    padding: 10px 0;
+    border-bottom: 2px solid #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    animation: slideLeft 1s ease-out; /* Slide animation for navbar links */
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Main section styles */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #1A1A1A;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+#intro {
+    text-align: center;
+    margin-bottom: 40px;
+    /*animation: slideLeft 1s ease-out; /* Slide animation for intro */
+}
+
+#highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.highlight {
+    flex: 1 1 calc(33% - 20px);
+    background-color: #2B2B2B;
+    padding: 20px;
+    border-radius: 12px; /* Removed the border */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.highlight:hover {
+    transform: translateY(-10px);
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #111111;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FFFFFF;
+    color: #111111;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    background: #1A1A1A;
+    border-top: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    animation: slideLeft 1s ease-out; /* Slide animation for footer */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* About Me Page */
+#about {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #1A1A1A;
+    padding: 20px;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+#bio {
+    font-style: italic;
+    color: #FFFFFF;
+}
+
+.skills ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+/* Project Page */
+#project {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #1A1A1A;
+    padding: 20px;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+#project ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+#project a {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* Contact Page */
+#contact {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #1A1A1A;
+    padding: 20px;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    background-color: #111111;
+    color: #FFFFFF;
+}
+
+form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #111111;
+    color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #FFFFFF;
+    color: #111111;
+}
+
+.navbar {
+    margin-top: 20px;
+    font-style: italic;
+    color: #FFFFFF;
+}
